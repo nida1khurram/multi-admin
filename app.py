@@ -504,7 +504,7 @@ def home_page():
     st.markdown('<div class="circle-container">', unsafe_allow_html=True)
     
     try:
-        with open("school-pic.jpeg", "rb") as img_file:
+        with open("school.jpeg", "rb") as img_file:
             img_base64 = base64.b64encode(img_file.read()).decode('utf-8')
         img_html = f'<img src="data:image/jpeg;base64,{img_base64}" alt="School Logo">'
     except:
